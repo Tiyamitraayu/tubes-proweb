@@ -1,7 +1,8 @@
 ## **3. Laporan Progres Mingguan**
 **Kelompok**: 10  
 **Mitra**: Jaya Mandiri Motor  
-**Pekan ke-**: 9  ## **3. Laporan Progres Mingguan**
+**Pekan ke-**: 9
+**3. Laporan Progres Mingguan**
 **Kelompok**: 10  
 **Mitra**: Jaya Mandiri Motor  
 **Pekan ke-**: 9  
@@ -37,7 +38,7 @@ Pada pekan ke-9, tim menyelesaikan requirement gathering dengan mitra dan memula
 - Mulai pembuatan halaman katalog produk  
 
 ### **Contributions**
-**Riska Fadlun Khairiyah P**: Dokumen requirement, Desain wireframe UI 
+**Riska Fadlun Khairiyah P**: Dokumen requirement, Desain wireframe UI
 **Dzaky Rasyid**: Desain wireframe UI, timeline
 **Muhammad Khoiruddin Marzuq**: Desain Mockup  
 **Tiya Mitra Ayu**: Setup Github Repository
