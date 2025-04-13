@@ -48,6 +48,17 @@ Pada pekan ke-9, tim menyelesaikan requirement gathering dengan mitra dan memula
 [GitHub Repo](https://github.com/aidilsaputrakirsan/sparetrack)  
 [Tampilan Mockup] (![alt text]()
 
+Gambar tersebut menunjukkan antarmuka (UI) dari sebuah aplikasi atau website e-commerce bernama **SPARETRACK**, yang menjual **suku cadang kendaraan bermotor**. Di bagian atas terdapat **logo** dan slogan “Partner Andalan untuk Suku Cadang Berkualitas!”. Di bawahnya ada **search bar** untuk mencari produk (contoh: "Filter oil"), lalu ikon keranjang, chat, notifikasi, dan akun pengguna.
+
+Bagian utama menampilkan kategori **"Special For You"** dengan tab seperti "For You", "Featured", "Top Of Week", dan "Oil". Tab yang sedang aktif adalah **"Top Of Week"**, dan di dalamnya ditampilkan berbagai produk otomotif, seperti:
+
+- **Filter Oli** seharga Rp 40.000
+- **Oli Shell** seharga Rp 200.000
+- **Kampas Rem** seharga Rp 250.000
+- **Filter Udara** seharga Rp 50.000
+
+Semua produk ditampilkan dalam bentuk grid (kisi-kisi) dengan gambar produk, nama produk, dan harga. Desain UI bersih, modern, dan mudah dinavigasi.
+
 ---
 
 ## **4. Fitur MVP**
@@ -221,59 +232,3 @@ Pada pekan ke-9, tim menyelesaikan requirement gathering dengan mitra dan memula
 | 11  | Deployment                   |             |              |              |              |              |              | ✅           | Live System                |
 
 
-# **Proyek SPARETRACK - Sistem Manajemen Sparepart Jaya Mandiri Motor**
-
-## **1. Latar Belakang**
-Jaya Mandiri Motor adalah penyedia sparepart mobil dan truk dengan reputasi baik di industri otomotif, menawarkan suku cadang asli dan aftermarket berkualitas. Meskipun demikian, perusahaan menghadapi masalah dalam pengelolaan stok manual, pemesanan konvensional yang tidak efisien, dan pelacakan ketersediaan sparepart. Untuk mengatasi hal ini dan memperluas pasar, Jaya Mandiri Motor mengembangkan website SPARETRACK, sistem berbasis web yang mempermudah jual beli sparepart secara daring. SPARETRACK menyediakan katalog produk online, fitur pencarian, pemesanan, pelacakan pesanan, manajemen stok, serta integrasi pembayaran, yang meningkatkan efisiensi dan transparansi proses pembelian sparepart.
-
-## **2. Tujuan**
-Membangun sistem berbasis web untuk:
-- Digitalisasi katalog sparepart  
-- Otomatisasi manajemen stok  
-- Penyediaan laporan real-time  
-
-## **3. Fitur MVP**
-**Autentikasi**
-- Login multi-role (Super Admin/Admin/Customer)  
-- Register dengan verifikasi email  
-
-**Manajemen Produk**
-- CRUD sparepart  
-- Filter by tipe kendaraan (mobil/truk)  
-
-**Transaksi**
-- Keranjang belanja  
-- Checkout dengan multi-metode pembayaran  
-
-**Manajemen Admin**
-- Update stok otomatis  
-- Laporan penjualan harian/mingguan  
-
-## **4. User Roles**
-| Role         | Hak Akses                     |
-|--------------|-------------------------------|
-| Super Admin  | Kelola semua admin & sistem   |
-| Admin        | Manajemen produk & transaksi  |
-| Customer     | Pembelian & riwayat pesanan   |
-
-## **5. Tech Stack**
-**Frontend**: HTML/CSS/JS, Bootstrap  
-**Backend**: PHP, MySQL  
-**Keamanan**: Session-based authentication, enkripsi data  
-
-## **6. Timeline**
-## **Timeline Proyek SPARETRACK (Sesuai SKPL)**
-
-| No. | Kegiatan                     | Minggu ke-9 | Minggu ke-10 | Minggu ke-11 | Minggu ke-12 | Minggu ke-13 | Minggu ke-14 | Minggu ke-15 | Deliverables               |
-|-----|------------------------------|-------------|--------------|--------------|--------------|--------------|--------------|--------------|----------------------------|
-| 1   | Requirement Gathering        | ✅          |              |              |              |              |              |              | Dokumen SKPL Final         |
-| 2   | Desain UI/UX                 | ✅          |              |              |              |              |              |              | Wireframe Figma            |
-| 3   | Setup Environment            | ✅          |              |              |              |              |              |              | GitHub Repo                |
-| 4   | Implementasi Autentikasi     |             | ✅           |              |              |              |              |              | Sistem Login/Register      |
-| 5   | Pengembangan Katalog Produk  |             |              | ✅           | ✅           |              |              |              | Halaman Produk + Filter    |
-| 6   | Fitur Transaksi              |             |              |              | ✅           |              |              |              | Keranjang + Checkout       |
-| 7   | Manajemen Produk (Admin)     |             |              |              |              | ✅           |              |              | CRUD Produk                |
-| 8   | Manajemen Stok               |             |              |              |              | ✅           |              |              | Update Stok Otomatis       |
-| 9   | Sistem Laporan               |             |              |              |              |              | ✅           |              | Laporan Penjualan          |
-| 10  | Testing & Debugging          |             |              |              |              |              | ✅           | ✅           | Test Case                  |
-| 11  | Deployment                   |             |              |              |              |              |              | ✅           | Live System                |
