@@ -39,7 +39,7 @@ Pada pekan ke-9, tim menyelesaikan requirement gathering dengan mitra dan memula
 ### **Contributions**
 **Riska Fadlun Khairiyah P**: Dokumen requirement, Desain wireframe UI 
 **Dzaky Rasyid**: Desain wireframe UI, timeline
-**Muhammad Khoiruddin  **: Setup GitHub repository  
+**Muhammad Khoiruddin Marzuq**: Desain Mockup  
 **Tiya Mitra Ayu**: Setup Github Repository
 
 ### **Screenshots/Demo**
