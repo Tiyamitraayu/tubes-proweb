@@ -44,8 +44,8 @@ Pada pekan ke-11, tim fokus pada implementasi sistem autentikasi pengguna (login
 
 ### **⚠️ Challenges & Solutions**
 
-**Tantangan**: Form register tidak menampilkan pesan kesalahan  
-**Solusi**: Menambahkan pengecekan respons dari API dan error handler di React  
+**Tantangan**: Form register tidak menampilkan pesan kesalahan dan data tidak masuk ke database meskipun UI tampil normal.  
+**Solusi**: Dilakukan debugging koneksi frontend ke backend, kemudian ditambahkan pengecekan respons dari API, serta penanganan error pada React agar error dari server (seperti koneksi database gagal) bisa ditampilkan ke user.
 
 ---
 
