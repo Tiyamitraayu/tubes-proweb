@@ -7,4 +7,5 @@ database: 'ecommerce-app',
 password: 'tiya1234',
 port: 5432,
 });
+
 module.exports = pool;
