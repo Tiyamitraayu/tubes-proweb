@@ -14,7 +14,9 @@
 ---
 
 ### **📌 Progress Summary**
-Pada pekan ke-12, tim menyelesaikan fitur pengelolaan stok dan manajemen transaksi, melakukan perbaikan UI/UX berdasarkan masukan mitra, serta menulis beberapa unit test untuk fungsi penting.
+
+Pada pekan ke-12, tim berhasil menyelesaikan beberapa fitur penting. Fitur Pengelolaan Stok untuk Admin memungkinkan pembaruan stok dengan validasi stok negatif, serta integrasi dengan katalog produk. Kami juga menyelesaikan Manajemen Transaksi, memungkinkan customer melakukan transaksi dengan data yang tersimpan dan riwayat yang mudah diakses.
+
 ---
 
 ### **✅ Accomplished Tasks**
