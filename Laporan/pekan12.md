@@ -52,15 +52,17 @@ Pada pekan ke-12, tim menyelesaikan fitur pengelolaan stok dan manajemen transak
 **Solusi**: Melakukan debugging terhadap request dan response, memeriksa format endpoint, header, serta parameter yang dikirim. Error berhasil diatasi dengan memperbaiki konfigurasi dan menyesuaikan struktur data sesuai spesifikasi backend.
 
 **Tantangan**: Terjadinya kesalahan saat akan nge-push ke github    
-**Solusi**: Terjadinya kesalahan saat akan nge-push ke github
+**Solusi**: Mengecek kembali konfigurasi Git, memastikan remote repository sudah benar, melakukan git pull terlebih dahulu jika ada perubahan terbaru, dan menyelesaikan konflik merge sebelum mencoba push ulang.
 
 ---
 
 ### **🗓️ Next Week Plan**
 
-- Implementasi **Core Feature #4**  
+- Implementasi **Core Feature #4 : fitur utama 4**  
 - Pembuatan **admin panel dashboard sederhana** untuk pengelolaan data  
-- Penambahan **visualisasi data berupa chart/grafik sederhana** jika relevan  
+- Penambahan **visualisasi data berupa chart/grafik sederhana** jika relevan
+- Testing
+- Memperbaiki yang kurang dari tugas pekan 12 
 
 ---
 
