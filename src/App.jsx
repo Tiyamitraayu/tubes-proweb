@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import Cart from './pages/Cart';
 
 // Components
 import Layout from './components/Layout';
@@ -17,6 +18,7 @@ import NotificationPanel from './components/NotificationPanel';
 
 // Context
 import AuthProvider from './context/AuthContext';
+import { CartProvider } from './context/CartContext';
 
 function App() {
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
@@ -27,43 +29,46 @@ function App() {
 
   return (
     <AuthProvider>
-      <BrowserRouter>
-        <div className="app-container">
-          <Routes>
-            {/* Public routes */}
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            
-            {/* Main layout with navbar and footer */}
-            <Route 
-              path="/" 
-              element={
-                <Layout onNotificationToggle={handleToggleNotification} />
-              }
-            >
-              {/* Public routes within layout */}
-              <Route index element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="contact" element={<Contact />} />
+      <CartProvider>
+        <BrowserRouter>
+          <div className="app-container">
+            <Routes>
+              {/* Public routes */}
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
               
-              {/* Protected routes */}
-              <Route element={<PrivateRoute />}>
-                {/* Add protected routes here */}
-                {/* Example: <Route path="dashboard" element={<Dashboard />} /> */}
+              {/* Main layout with navbar and footer */}
+              <Route 
+                path="/" 
+                element={
+                  <Layout onNotificationToggle={handleToggleNotification} />
+                }
+              >
+                {/* Public routes within layout */}
+                <Route index element={<Home />} />
+                <Route path="about" element={<About />} />
+                <Route path="contact" element={<Contact />} />
+                <Route path="cart" element={<Cart />} />
+                
+                {/* Protected routes */}
+                <Route element={<PrivateRoute />}>
+                  {/* Add protected routes here */}
+                  {/* Example: <Route path="dashboard" element={<Dashboard />} /> */}
+                </Route>
+                
+                {/* 404 route */}
+                <Route path="*" element={<NotFound />} />
               </Route>
-              
-              {/* 404 route */}
-              <Route path="*" element={<NotFound />} />
-            </Route>
-          </Routes>
-          
-          {/* Notification Panel */}
-          <NotificationPanel 
-            isOpen={isNotificationOpen} 
-            onClose={() => setIsNotificationOpen(false)} 
-          />
-        </div>
-      </BrowserRouter>
+            </Routes>
+            
+            {/* Notification Panel */}
+            <NotificationPanel 
+              isOpen={isNotificationOpen} 
+              onClose={() => setIsNotificationOpen(false)} 
+            />
+          </div>
+        </BrowserRouter>
+      </CartProvider>
     </AuthProvider>
   );
 }
