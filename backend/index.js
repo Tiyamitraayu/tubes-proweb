@@ -13,7 +13,9 @@ const orderRoutes = require('./routes/orderRoutes');
 const cartRoutes = require('./routes/cartRoutes'); 
 const paymentRoutes = require('./routes/paymentRoutes'); 
 const shippingRoutes = require('./routes/shippingRoutes'); 
-const reportRoutes = require('./routes/reportRoutes'); 
+const reportRoutes = require('./routes/reportRoutes');
+const superAdminRoutes = require('./routes/superAdminRoutes'); 
+const categoryRoutes = require('./routes/categoryRoutes');
 
 // Middleware
 app.use(cors());
@@ -30,6 +32,8 @@ app.use('/api/cart', cartRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/shipping', shippingRoutes);
 app.use('/api/reports', reportRoutes);
+app.use('/api/super-admins', superAdminRoutes);
+app.use('/api/categories', categoryRoutes);
 
 // Default routes
 app.get('/', (req, res) => {
