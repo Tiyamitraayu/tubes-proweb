@@ -9,7 +9,11 @@ const reviewRoutes = require('./routes/reviewRoutes');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const adminRoutes = require('./routes/adminRoutes');
-const orderRoutes = require('./routes/orderRoutes'); 
+const orderRoutes = require('./routes/orderRoutes');
+const cartRoutes = require('./routes/cartRoutes'); 
+const paymentRoutes = require('./routes/paymentRoutes'); 
+const shippingRoutes = require('./routes/shippingRoutes'); 
+const reportRoutes = require('./routes/reportRoutes'); 
 
 // Middleware
 app.use(cors());
@@ -21,7 +25,11 @@ app.use('/api/reviews', reviewRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/admin', adminRoutes); 
-app.use('/api/orders', orderRoutes); // Tambahkan ini juga
+app.use('/api/orders', orderRoutes); 
+app.use('/api/cart', cartRoutes);
+app.use('/api/payments', paymentRoutes);
+app.use('/api/shipping', shippingRoutes);
+app.use('/api/reports', reportRoutes);
 
 // Default routes
 app.get('/', (req, res) => {

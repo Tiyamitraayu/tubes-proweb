@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const orderController = require('../controllers/orderController');
 
-// GET semua pesanan
-router.get('/', orderController.getAllOrders);
+router.post('/checkout', orderController.createOrder);
+router.get('/:userId', orderController.getOrders);
+router.get('/detail/:orderId', orderController.getOrderItems);
 
 module.exports = router;
