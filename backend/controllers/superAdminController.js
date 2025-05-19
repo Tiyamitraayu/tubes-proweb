@@ -1,11 +1,11 @@
 const db = require('../db');
 
-// Buat admin baru
+// Tambah admin baru
 exports.createAdmin = async (req, res) => {
   const { name, email, password } = req.body;
   try {
     const result = await db.query(
-      `INSERT INTO users (name, email, password, role) VALUES ($1, $2, $3, 'ADMIN') RETURNING id, name, email`,
+      `INSERT INTO users (name, email, password, role) VALUES ($1, $2, $3, 'ADMIN') RETURNING *`,
       [name, email, password]
     );
     res.status(201).json({ message: 'Admin berhasil dibuat', data: result.rows[0] });
@@ -24,7 +24,7 @@ exports.getAdmins = async (req, res) => {
   }
 };
 
-// Update admin
+// Ubah admin
 exports.updateAdmin = async (req, res) => {
   const { id } = req.params;
   const { name, email, password } = req.body;

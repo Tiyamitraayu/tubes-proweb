@@ -1,11 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/adminController');
+const auth = require('../middleware/authMiddleware');
+const authorizeRole = require('../middleware/authorizeRole');
 
-// Define your routes
-router.get('/users', adminController.getAllUsers);
-router.post('/users', adminController.createUser);
-router.put('/users/:id', adminController.updateUser);
-router.delete('/users/:id', adminController.deleteUser);
+// Hanya bisa diakses oleh Super Admin
+router.post('/create', auth, authorizeRole('SUPER_ADMIN'), adminController.createAdmin);
+router.get('/', auth, authorizeRole('SUPER_ADMIN'), adminController.getAdmins);
+router.put('/update/:id', auth, authorizeRole('SUPER_ADMIN'), adminController.updateAdmin);
+router.delete('/delete/:id', auth, authorizeRole('SUPER_ADMIN'), adminController.deleteAdmin);
 
 module.exports = router;

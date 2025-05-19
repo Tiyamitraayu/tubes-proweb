@@ -22,8 +22,12 @@ router.post('/login', async (req, res) => {
   const valid = await bcrypt.compare(password, user.password);
   if (!valid) return res.status(400).json({ message: 'Password salah' });
 
-  const token = jwt.sign({ id: user.id }, 'secret_key');
-  res.json({ token });
+  const token = jwt.sign(
+  { id: user.id, role: user.role },
+  process.env.JWT_SECRET || 'secret_key',
+  { expiresIn: '1d' }
+);
+
 });
 
 module.exports = router;
