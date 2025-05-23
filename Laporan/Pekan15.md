@@ -17,13 +17,6 @@
 
 **Pekan 15 difokuskan pada finalisasi proyek SPARETRACK**, yang mencakup persiapan presentasi akhir, dokumentasi README, menyelesaikan fitur-fitur yang belum terselesaikan.
 
-Selain itu, seluruh dokumentasi teknis dan pengguna telah diselesaikan, mencakup:  
-- **README** yang menjelaskan proyek secara umum  
-- **Dokumentasi API** dengan penjelasan endpoint, method, parameter, dan contoh response  
-- **User Manual** untuk pengguna akhir (admin dan pelanggan)
-
-Source code proyek telah diunggah ke GitHub dengan **tag/release final**, dan aplikasi berhasil **dideploy** untuk kebutuhan demo langsung selama presentasi.
-
 ---
 
 ### ✅ Accomplished Tasks
